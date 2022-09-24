@@ -1,4 +1,4 @@
-
+/* styling file for header, images, and buttons */
 .image {
   width: 600px;
   height: 400px;
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .btn {
@@ -18,7 +19,14 @@
   text-align: center;
 }
 
-.right-arrow {
+.header {
+  text-align: center;
+}
+
+/* Positioned arrows so that they take the left and right quarters of the picture.  */
+/* Made the text, background, and border color transparent so the buttons are not visible*/
+/* Changed the cursor to indicate that user is hovering over the button*/
+.right-button {
   cursor: e-resize;
   position: absolute;
   top: 50%;
@@ -33,11 +41,7 @@
 
 }
 
-.header {
-  text-align: center;
-}
-
-.left-arrow {
+.left-button {
   cursor: w-resize;
   position: absolute;
   top: 50%;
@@ -51,16 +55,16 @@
   border-color: transparent;
   
 }
-
+/*Was not able to correctly implement the cross-fade animation, so I chose to have a .50 second ease transition*/
 .slide {
-  opacity: 0;
-  transition-duration: .50s ease;
+  opacity: 0; 
+  transition-duration: .50s ease; 
 }
 
+
 .slide.active {
-  opacity: 1;
+  opacity: 1; 
   transition-duration: .50s;
-  /* transform: scale(1.08) */
 }
 
 

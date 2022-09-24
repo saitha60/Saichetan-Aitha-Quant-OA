@@ -1,11 +1,12 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "../navbar.css";
 import "../logo.css";
 
+//This file handles the navbar that is seen at the top of the website.
+// Since this is a dummy navbar, I have not added any routing and instead used the useRef react hook. 
+//I made tabs for Home, Menu, Contact Us, and About. I also imported the Quant logo in the top right corner :)
 function Navbar() {
 	const navRef = useRef();
-
 	return (
 		<header>
 			<h3>
